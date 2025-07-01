@@ -1,0 +1,88 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background: #000;
+  color: #fff;
+  height: 64px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  box-shadow: 0 2px 10px rgba(0, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #00ffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: #00ffff;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.nav-links a:hover {
+  color: #00ffff;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* CTA Button */
+.nav-cta {
+  background: #00ffff;
+  color: #000;
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.nav-cta:hover {
+  background: #00cccc;
+}
+
+/* Responsive (Optional) */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}

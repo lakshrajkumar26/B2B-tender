@@ -44,7 +44,7 @@ const HomePage = () => {
         <a href="/search" className="btn primary">Search Companies</a>
       </section>
 
-      {/* FOOTER */}
+     
       <footer className="footer">
         <p>&copy; {new Date().getFullYear()} B2B Tender Platform. All rights reserved.</p>
       </footer>

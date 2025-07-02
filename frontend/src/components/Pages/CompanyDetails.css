@@ -1,0 +1,45 @@
+/* Container styling */
+.company-column-container {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Company name heading */
+.company-column-container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Company logo styling */
+.logo-small {
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Company detail paragraphs */
+.company-column-container p {
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+/* Bold labels */
+.company-column-container p strong {
+  color: #1a1a1a;
+  font-weight: 600;
+}

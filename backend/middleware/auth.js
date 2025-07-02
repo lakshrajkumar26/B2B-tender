@@ -6,7 +6,7 @@ try{
 
  const token = req.cookies.token;
  //check is token avail
- if(!token) return res.send(401).json({err : "Access desied.No token provided"});
+ if(!token) return res.status(401).json({err : "Access desied.No token provided"});
 
  const decoded = jwt.verify(token , "secretkey"); //no need to store token ig coz same secretkey
 
@@ -20,3 +20,27 @@ catch(err){
 }
 }
 module.exports = verifyJwt; 
+
+//new with bearer
+
+
+// const jwt = require("jsonwebtoken");
+
+// const verifyJwt = (req, res, next) => {
+//   try {
+//     const token =
+//       req.cookies.token ||
+//       (req.headers.authorization && req.headers.authorization.split(" ")[1]);
+
+//     if (!token) return res.status(401).json({ err: "Access denied. No token provided" });
+
+//     const decoded = jwt.verify(token, "secretkey");
+//     req.userInfo = decoded;
+//     console.log(req.userInfo.email);
+//     next();
+//   } catch (err) {
+//     return res.status(400).json({ err: "invalid jwt or expires" });
+//   }
+// };
+
+// module.exports = verifyJwt;

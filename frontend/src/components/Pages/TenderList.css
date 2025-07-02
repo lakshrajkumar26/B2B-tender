@@ -1,0 +1,95 @@
+.tender-grid {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background: #f9fafb;
+}
+
+.tender-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tender-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.tender-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.tender-description {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.tender-deadline {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 0.5rem;
+}
+
+.tender-budget {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #27ae60;
+  margin-bottom: 1rem;
+}
+
+.tender-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.tender-buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.edit-btn {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background-color: #2980b9;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.tender-input,
+.tender-textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.tender-input:focus,
+.tender-textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}

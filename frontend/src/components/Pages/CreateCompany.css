@@ -1,0 +1,123 @@
+/* Container */
+.create-company-container {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 3rem 2.5rem;
+  background: linear-gradient(to right, #ffffff, #f8faff);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeInUp 0.6s ease-in-out;
+}
+
+/* Heading */
+.create-company-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+/* Form styling */
+.company-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+/* Label styling */
+.company-form label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+/* Input & Select */
+.company-form input,
+.company-form select,
+.company-form textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease;
+}
+
+.company-form input:focus,
+.company-form select:focus,
+.company-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Textarea height */
+.company-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Logo Preview */
+.logo-preview {
+  width: 160px;
+  height: auto;
+  margin-top: 0.5rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Submit Button */
+.company-form button {
+  margin-top: 1rem;
+  background-color: #007bff;
+  color: white;
+  padding: 0.9rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 123, 255, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.company-form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Form message */
+.form-message {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: green;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

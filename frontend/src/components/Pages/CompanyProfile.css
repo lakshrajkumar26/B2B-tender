@@ -1,0 +1,80 @@
+/* Full page layout */
+.company-column-container {
+  padding: 2rem;
+  background: #f9f9fb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.column-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2d2d2d;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+/* Main list layout */
+.company-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Each company row */
+.company-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Logo image (small) */
+.logo-small {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  border: 1px solid #ccc;
+}
+
+/* Company info next to logo */
+.company-details h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #1a1a1a;
+}
+
+.company-details p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Flex container to place heading on left and button on right */
+.company-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Stylish top-right button */
+.register-company-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
+  transition: background 0.2s ease;
+}
+
+.register-company-btn:hover {
+  background-color: #0056b3;
+}

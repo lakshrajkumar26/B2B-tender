@@ -1,7 +1,8 @@
 const mongoose = require("mongoose")
+require('dotenv').config();
 
-const URL = "mongodb://localhost:27017/newuser" 
-
+// const URL = "mongodb://localhost:27017/newuser" 
+const URL = process.env.MONGO_URI
 mongoose.connect(URL),{ 
     useNewUrlParser: true,
   useUnifiedTopology: true,};

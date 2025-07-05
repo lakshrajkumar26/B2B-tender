@@ -10,8 +10,11 @@ if (!URL) {
 }
 
 mongoose.connect(URL, { 
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+   useUnifiedTopology: true,
+    ssl: true,
+    sslValidate: false,
+    retryWrites: true,
+    w: 'majority'
 });
 
 const db = mongoose.connection;

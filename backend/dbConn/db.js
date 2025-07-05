@@ -2,7 +2,7 @@ const mongoose = require("mongoose")
 require('dotenv').config();
 
 // const URL = "mongodb://localhost:27017/newuser" 
-const URL = process.env.MONGO_URL || process.env.MONGO_URL || process.env.MONGO_URL
+const URL = process.env.MONGODB_URL || process.env.MONGODB_URL || process.env.MONGODB_URL
 
 if (!URL) {
     console.error("MongoDB URI is not defined. Please set MONGODB_URI environment variable.");

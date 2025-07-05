@@ -41,12 +41,3 @@ db.on("error", (err) => {
 })
 
 module.exports = db;
-<<<<<<< HEAD
-
-
-
-
-
-https://github.com/lakshrajkumar26/B2B-tender/tree/master/backend
-=======
->>>>>>> 0ec4ffe4a5e36e00e3e267895357d501b762801b

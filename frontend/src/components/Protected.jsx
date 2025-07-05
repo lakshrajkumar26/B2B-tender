@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import API_BASE_URL from '../configFolder/api.js';
+import API_BASE_URL from '../configFolder/api';
 
 const ProtectedPage = () => {
   const [message, setMessage] = useState('');

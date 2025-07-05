@@ -10,5 +10,10 @@
   },
   "engines": {
     "node": ">=16.0.0"
+  },
+  "railway": {
+    "buildCommand": "cd backend && npm install",
+    "startCommand": "cd backend && npm start",
+    "sourceDirectory": "backend"
   }
 }

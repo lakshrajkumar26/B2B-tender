@@ -15,7 +15,7 @@ const applicationRoutes = require('./routes/applicationRoutes');
 const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:3000',
-  'https://your-frontend-app.vercel.app', // Replace with your Vercel URL
+  'https://b2b-tender-frontend.vercel.app', // Replace with your actual Vercel URL
   process.env.FRONTEND_URL
 ].filter(Boolean);
 
@@ -69,7 +69,7 @@ app.get('/health', (req, res) => {
   res.status(200).json({ status: 'OK', message: 'Server is running' });
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = parseInt(process.env.PORT) || 3000;
 
 app.listen(PORT, ()=>{
     console.log(`Server running on port ${PORT}`);

@@ -3,6 +3,7 @@ import './Login.css'; // Import the CSS file
 import {useState} from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import API_BASE_URL from '../../config';
 
 const Login = () => {
  const [email ,setEmail] = useState('');
@@ -13,7 +14,7 @@ const handleSubmit = async(e)=>{
    e.preventDefault();
   try{
     console.log(email , password)
-  const res = await axios.post("http://localhost:3000/user/login",{
+  const res = await axios.post(`${API_BASE_URL}/user/login`,{
     email : email,
     password: password,
   },{ withCredentials: true });

@@ -2,7 +2,7 @@ const mongoose = require("mongoose")
 require('dotenv').config();
 
 // const URL = "mongodb://localhost:27017/newuser" 
-const URL = process.env.MONGO_URI || process.env.MONGO_URI
+const URL = process.env.MONGO_URI || process.env.MONGODB_URI
 
 if (!URL) {
     console.error("MongoDB URI is not defined. Please set MONGODB_URI environment variable.");
@@ -12,6 +12,10 @@ if (!URL) {
 mongoose.connect(URL, { 
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    ssl: true,
+    sslValidate: false,
+    retryWrites: true,
+    w: 'majority'
 });
 
 const db = mongoose.connection;
@@ -29,3 +33,9 @@ db.on("error", (err) => {
 })
 
 module.exports = db;
+
+
+
+
+
+https://github.com/lakshrajkumar26/B2B-tender/tree/master/backend

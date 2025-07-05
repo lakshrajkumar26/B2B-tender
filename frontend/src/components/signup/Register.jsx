@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Register.css'; // Import the CSS
 import axios from "axios";
 import { Link } from 'react-router-dom';
+import API_BASE_URL from '../../config';
 
 const Register = () => {
 
@@ -12,7 +13,7 @@ const Register = () => {
   const handleSumbit = async(e)=>{
     e.preventDefault();
     try{
-      const res = await axios.post("http://localhost:3000/user/register", {
+      const res = await axios.post(`${API_BASE_URL}/user/register`, {
         username : username,
         email ,
         password ,

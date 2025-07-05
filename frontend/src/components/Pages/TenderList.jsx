@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./TenderList.css";
+import API_BASE_URL from '../../config';
 
 const TenderList = () => {
   const [tenders, setTenders] = useState([]);
@@ -27,7 +28,7 @@ const TenderList = () => {
   }, []);
 
   const fetchTenders = async () => {
-    const res = await axios.get("http://localhost:3000/tender", { withCredentials: true });
+    const res = await axios.get(`${API_BASE_URL}/tender`, { withCredentials: true });
     setTenders(res.data);
   };
 
@@ -42,7 +43,7 @@ const TenderList = () => {
   };
 
   const handleUpdate = async () => {
-    await axios.put(`http://localhost:3000/tender/${editingTender}`, formData, {
+    await axios.put(`${API_BASE_URL}/tender/${editingTender}`, formData, {
       withCredentials: true,
     });
     setEditingTender(null);
@@ -50,7 +51,7 @@ const TenderList = () => {
   };
 
   const handleDelete = async (id) => {
-    await axios.delete(`http://localhost:3000/tender/${id}`, {
+    await axios.delete(`${API_BASE_URL}/tender/${id}`, {
       withCredentials: true,
     });
     fetchTenders();
@@ -58,7 +59,7 @@ const TenderList = () => {
 
   const handleCreateTender = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:3000/tender", newTender, { withCredentials: true });
+    await axios.post(`${API_BASE_URL}/tender`, newTender, { withCredentials: true });
     setNewTender({ title: "", description: "", deadline: "", budget: "" });
     fetchTenders();
   };
@@ -70,7 +71,7 @@ const TenderList = () => {
 
   const handleSubmitProposal = async (tenderId) => {
     await axios.post(
-      "http://localhost:3000/application/submit",
+      `${API_BASE_URL}/application/submit`,
       { tenderId, proposalText },
       { withCredentials: true }
     );
@@ -81,7 +82,7 @@ const TenderList = () => {
 
   const handleShowApplications = async (tenderId) => {
     setShowApplicationsFor(tenderId);
-    const res = await axios.get(`http://localhost:3000/application/tender/${tenderId}`, { withCredentials: true });
+    const res = await axios.get(`${API_BASE_URL}/application/tender/${tenderId}`, { withCredentials: true });
     setApplications(res.data);
   };
 

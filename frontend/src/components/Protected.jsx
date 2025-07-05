@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import API_BASE_URL from './config';
 
 const ProtectedPage = () => {
   const [message, setMessage] = useState('');
@@ -8,7 +9,7 @@ const ProtectedPage = () => {
   useEffect(() => {
     const fetchProtectedData = async () => {
       try {
-        const res = await axios.get('http://localhost:3000/protectedroute', {
+        const res = await axios.get(`${API_BASE_URL}/protectedroute`, {
           withCredentials: true, 
         });
 

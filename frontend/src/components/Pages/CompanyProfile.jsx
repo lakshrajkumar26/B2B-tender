@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './CompanyProfile.css';
+import API_BASE_URL from '../../config';
 import { Link } from 'react-router-dom';
 
 const CompanyProfile = () => {
@@ -16,7 +17,7 @@ const CompanyProfile = () => {
     const fetchCompanies = async () => {
         setIsLoading(true);
         try {
-            const res = await axios.get('http://localhost:3000/company/companies', {
+            const res = await axios.get(`${API_BASE_URL}/company/companies`, {
                 withCredentials: true
             });
             setCompanies(res.data);
@@ -35,7 +36,7 @@ const CompanyProfile = () => {
             if (search.name) params.append('name', search.name);
             if (search.industry) params.append('industry', search.industry);
             if (search.services) params.append('services', search.services);
-            const res = await axios.get(`http://localhost:3000/company/search?${params.toString()}`, {
+            const res = await axios.get(`${API_BASE_URL}/company/search?${params.toString()}`, {
                 withCredentials: true
             });
             setCompanies(res.data);

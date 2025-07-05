@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import './CompanyDetails.css';
+import API_BASE_URL from '../../config';
 
 const CompanyDetails = () => {
   const { id } = useParams();
@@ -10,7 +11,7 @@ const CompanyDetails = () => {
   useEffect(() => {
     const fetchCompany = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/company/${id}`);
+        const res = await axios.get(`${API_BASE_URL}/company/${id}`);
         setCompany(res.data);
       } catch (err) {
         console.error('Failed to fetch company:', err);

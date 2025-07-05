@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Logout.css'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import API_BASE_URL from '../../config';
 
 
 const Logout = ({ children }) => {
@@ -13,7 +14,7 @@ const Logout = ({ children }) => {
       useEffect(() => {
     const checkAuth = async () => {
       try {
-        const res = await axios.get('http://localhost:3000/is-authenticated', {
+        const res = await axios.get(`${API_BASE_URL}/is-authenticated`, {
           withCredentials: true, // ✅ includes HTTP-only cookie
         });
 
@@ -47,7 +48,7 @@ const Logout = ({ children }) => {
 
     const handleLogout = async () => {
         try {
-            const res = await axios.post('http://localhost:3000/user/logout', {}, {
+            const res = await axios.post(`${API_BASE_URL}/user/logout`, {}, {
                 withCredentials: true,
             });
 

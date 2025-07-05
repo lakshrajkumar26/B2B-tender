@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './CreateCompany.css';
+import API_BASE_URL from '../../config';
 
 const CreateCompany = () => {
   const [formData, setFormData] = useState({
@@ -36,7 +37,7 @@ const CreateCompany = () => {
         data.append(key, value);
       });
 
-      const res = await axios.post('http://localhost:3000/company/register', data);
+      const res = await axios.post(`${API_BASE_URL}/company/register`, data);
       setMessage(res.data.message);
       setFormData({
         userId: '',

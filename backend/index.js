@@ -69,8 +69,12 @@ app.get('/health', (req, res) => {
   res.status(200).json({ status: 'OK', message: 'Server is running' });
 });
 
+<<<<<<< HEAD
 const PORT = parseInt(process.env.PORT) || 3000;
+=======
+>>>>>>> 0ec4ffe4a5e36e00e3e267895357d501b762801b
 
+const PORT = parseInt(process.env.PORT) || 3000;
 app.listen(PORT, ()=>{
     console.log(`Server running on port ${PORT}`);
 });

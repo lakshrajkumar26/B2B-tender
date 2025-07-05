@@ -2,7 +2,11 @@ const mongoose = require("mongoose")
 require('dotenv').config();
 
 // const URL = "mongodb://localhost:27017/newuser" 
+<<<<<<< HEAD
 const URL = process.env.MONGO_URI || process.env.MONGODB_URI
+=======
+const URL = process.env.MONGODB_URL
+>>>>>>> 0ec4ffe4a5e36e00e3e267895357d501b762801b
 
 if (!URL) {
     console.error("MongoDB URI is not defined. Please set MONGODB_URI environment variable.");
@@ -10,8 +14,12 @@ if (!URL) {
 }
 
 mongoose.connect(URL, { 
+<<<<<<< HEAD
     useNewUrlParser: true,
     useUnifiedTopology: true,
+=======
+   useUnifiedTopology: true,
+>>>>>>> 0ec4ffe4a5e36e00e3e267895357d501b762801b
     ssl: true,
     sslValidate: false,
     retryWrites: true,
@@ -33,9 +41,12 @@ db.on("error", (err) => {
 })
 
 module.exports = db;
+<<<<<<< HEAD
 
 
 
 
 
 https://github.com/lakshrajkumar26/B2B-tender/tree/master/backend
+=======
+>>>>>>> 0ec4ffe4a5e36e00e3e267895357d501b762801b

@@ -9,10 +9,10 @@ const ProtectedPage = () => {
     const fetchProtectedData = async () => {
       try {
         const res = await axios.get('http://localhost:3000/protectedroute', {
-          withCredentials: true, // 🔥 Required to send cookies
+          withCredentials: true, 
         });
 
-        setMessage(res.data); // ✅ Should return email + username
+        setMessage(res.data); // 
       } catch (err) {
         console.error(err);
         setError('Unauthorized or error occurred');

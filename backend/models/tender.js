@@ -5,7 +5,7 @@ const TenderSchema = new mongoose.Schema({
   description: { type: String },
   deadline: { type: Date, required: true },
   budget: { type: Number, required: true },
-  createdBy: { type: mongoose.Schema.Types.ObjectId, ref: "Company" }, // reference to company
+   // reference to company
 }, {
   timestamps: true
 });

@@ -50,6 +50,20 @@ routes.post('/register',upload.single("logo"),async(req,res)=>{
     }
 })
 
+// Search companies by name, industry, or services (MUST be before /:id)
+routes.get('/search', async (req, res) => {
+  try {
+    const { name, industry, services } = req.query;
+    const query = {};
+    if (name) query.name = { $regex: name, $options: 'i' };
+    if (industry) query.industry = { $regex: industry, $options: 'i' };
+    if (services) query.services = { $regex: services, $options: 'i' };
+    const results = await company.find(query);
+    res.status(200).json(results);
+  } catch (err) {
+    res.status(500).json({ error: 'Search failed', details: err.message });
+  }
+});
 
 routes.get('/companies',async(req,res)=>{
     
@@ -64,32 +78,20 @@ routes.get('/companies',async(req,res)=>{
     }
 })
 
-routes.get("/:id", async (req, res) => {
+// Only one /:id route, and it must be last
+routes.get('/:id', async (req, res) => {
   try {
     const id = req.params.id;
-
     const foundCompany = await company.findById(id);
     if (!foundCompany) {
-      return res.status(404).json({ error: "Company not found" });
+      return res.status(404).json({ error: 'Company not found' });
     }
-
     res.status(200).json(foundCompany);
-    console.log("found !!!");
+    console.log('found !!!');
   } catch (err) {
-    console.error("Get company by ID error:", err);
-    res.status(500).json({ error: "Failed to fetch company by ID" });
+    console.error('Get company by ID error:', err);
+    res.status(500).json({ error: 'Failed to fetch company by ID' });
   }
 });
-
-routes.get("/:id", async (req, res) => {
-  try {
-    const searchedCompany = await company.findById(req.params.id);
-    if (!searchedCompany) return res.status(404).json({ error: "Not found" });
-    res.status(200).json(searchedCompany);
-  } catch (err) {
-    res.status(500).json({ error: "Server error" });
-  }
-});
-
 
 module.exports = routes

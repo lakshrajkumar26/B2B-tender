@@ -14,6 +14,72 @@
   text-align: left;
 }
 
+/* Search Form */
+.company-search-form {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.company-search-form input {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.company-search-form input:focus {
+  border-color: #007bff;
+}
+
+.company-search-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.company-search-form button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+.company-search-form button[type="submit"]:hover {
+  background-color: #1e7e34;
+}
+
+.company-search-form button[type="submit"]:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.company-search-form button[type="button"] {
+  background-color: #6c757d;
+  color: white;
+}
+
+.company-search-form button[type="button"]:hover {
+  background-color: #545b62;
+}
+
+.company-search-form button[type="button"]:disabled {
+  background-color: #adb5bd;
+  cursor: not-allowed;
+}
+
 /* Main list layout */
 .company-list {
   display: flex;

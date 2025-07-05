@@ -1,95 +1,238 @@
+/* Tender List Grid Layout */
 .tender-grid {
   display: grid;
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
   padding: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  background: #f9fafb;
+  background: #f9f9f9;
 }
 
-.tender-card {
-  background-color: #fff;
-  border-radius: 16px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+/* Create Tender Form */
+.tender-form {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: 2rem;
+}
+
+.tender-form h2 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.tender-form button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.tender-form button[type="submit"]:hover {
+  background-color: #1e7e34;
+}
+
+/* Tender Card Style */
+.tender-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  transition: transform 0.2s ease;
 }
 
 .tender-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
 }
 
+/* Titles and Text */
 .tender-title {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
+  color: #333;
   font-weight: 600;
-  color: #2c3e50;
   margin-bottom: 0.5rem;
 }
 
 .tender-description {
-  font-size: 0.95rem;
-  color: #555;
-  margin-bottom: 0.75rem;
-}
-
-.tender-deadline {
-  font-size: 0.85rem;
-  color: #999;
-  margin-bottom: 0.5rem;
-}
-
-.tender-budget {
   font-size: 1rem;
-  font-weight: 500;
-  color: #27ae60;
+  color: #555;
   margin-bottom: 1rem;
 }
 
+.tender-deadline,
+.tender-budget {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 6px 0;
+}
+
+/* Buttons */
 .tender-buttons {
   display: flex;
-  gap: 0.75rem;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 1rem;
   flex-wrap: wrap;
 }
 
-.tender-buttons button {
-  padding: 0.5rem 1rem;
-  border: none;
+.edit-btn,
+.delete-btn,
+.apply-btn,
+.view-app-btn {
+  padding: 8px 14px;
   border-radius: 8px;
+  border: none;
+  font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background 0.3s ease;
 }
 
 .edit-btn {
-  background-color: #3498db;
-  color: #fff;
+  background-color: #007bff;
+  color: white;
 }
 
 .edit-btn:hover {
-  background-color: #2980b9;
+  background-color: #0056b3;
 }
 
 .delete-btn {
-  background-color: #e74c3c;
-  color: #fff;
+  background-color: #dc3545;
+  color: white;
 }
 
 .delete-btn:hover {
-  background-color: #c0392b;
+  background-color: #a71d2a;
 }
 
+.apply-btn {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.apply-btn:hover {
+  background-color: #e0a800;
+}
+
+.view-app-btn {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.view-app-btn:hover {
+  background-color: #138496;
+}
+
+/* Proposal Form */
+.proposal-form {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.proposal-textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.proposal-form button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.proposal-form button:first-of-type {
+  background-color: #28a745;
+  color: white;
+}
+
+.proposal-form button:last-of-type {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* Applications List */
+.applications-list {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.applications-list h4 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.applications-list button {
+  background-color: #6c757d;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.applications-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.applications-list li {
+  background: white;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+}
+
+.applications-list li strong {
+  color: #333;
+}
+
+/* Inputs */
 .tender-input,
 .tender-textarea {
   width: 100%;
-  padding: 0.5rem 0.75rem;
-  margin-bottom: 0.75rem;
-  border: 1px solid #ccc;
+  margin-bottom: 0.8rem;
+  padding: 10px 12px;
   border-radius: 8px;
+  border: 1px solid #ccc;
   font-size: 0.95rem;
+  outline: none;
 }
 
 .tender-input:focus,
 .tender-textarea:focus {
-  border-color: #3498db;
-  outline: none;
+  border-color: #007bff;
+}
+
+/* Textarea resize */
+.tender-textarea {
+  resize: vertical;
+  min-height: 80px;
 }

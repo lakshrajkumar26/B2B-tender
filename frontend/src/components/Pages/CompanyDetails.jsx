@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-import './CompanyProfile.css';
+import './CompanyDetails.css';
 
 const CompanyDetails = () => {
   const { id } = useParams();
@@ -20,20 +20,24 @@ const CompanyDetails = () => {
     fetchCompany();
   }, [id]);
 
-  if (!company) return <p>Loading...</p>;
+  if (!company) return <div className="loader">Loading company details...</div>;
 
   return (
-    <div className="company-column-container">
-      <h2>{company.name}</h2>
-      <img
-        className="logo-small"
-        src={company.logo || 'https://via.placeholder.com/100'}
-        alt={company.name}
-      />
-      <p><strong>Industry:</strong> {company.industry}</p>
-      <p><strong>Services:</strong> {company.services}</p>
-      <p><strong>Description:</strong> {company.description}</p>
-      
+    <div className="company-detail-container">
+      <div className="company-header">
+        <img
+          className="company-detail-logo"
+          src={company.logo || 'https://via.placeholder.com/100'}
+          alt={company.name}
+        />
+        <h2 className="company-name">{company.name}</h2>
+      </div>
+
+      <div className="company-info">
+        <p><strong>Industry:</strong> {company.industry}</p>
+        <p><strong>Services:</strong> {company.services}</p>
+        <p><strong>Description:</strong> {company.description}</p>
+      </div>
     </div>
   );
 };

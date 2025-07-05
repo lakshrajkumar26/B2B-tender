@@ -1,0 +1,182 @@
+[
+  {
+    "title": "Website Development for E-commerce Platform",
+    "description": "We need a modern, responsive e-commerce website with payment integration, inventory management, and admin dashboard.",
+    "deadline": "2024-03-15T00:00:00.000Z",
+    "budget": 25000,
+    "createdBy": "{{COMPANY_ID}}",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "title": "Mobile App Development for Food Delivery",
+    "description": "Develop a cross-platform mobile app for food delivery service with real-time tracking, payment gateway, and user management.",
+    "deadline": "2024-03-20T00:00:00.000Z",
+    "budget": 35000,
+    "createdBy": "{{COMPANY_ID}}",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "title": "Cloud Infrastructure Migration",
+    "description": "Migrate our existing on-premise infrastructure to AWS cloud with high availability, security, and cost optimization.",
+    "deadline": "2024-03-25T00:00:00.000Z",
+    "budget": 45000,
+    "createdBy": "{{COMPANY_ID}}",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "title": "Digital Marketing Campaign",
+    "description": "Comprehensive digital marketing campaign including SEO, social media marketing, PPC, and content creation for our new product launch.",
+    "deadline": "2024-03-30T00:00:00.000Z",
+    "budget": 15000,
+    "createdBy": "{{COMPANY_ID}}",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "title": "HR Management System",
+    "description": "Custom HR management system with employee portal, attendance tracking, payroll management, and performance evaluation modules.",
+    "deadline": "2024-04-05T00:00:00.000Z",
+    "budget": 30000,
+    "createdBy": "{{COMPANY_ID}}",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "title": "Cybersecurity Audit and Implementation",
+    "description": "Comprehensive security audit of our IT infrastructure and implementation of security measures including firewall, encryption, and access controls.",
+    "deadline": "2024-04-10T00:00:00.000Z",
+    "budget": 40000,
+    "createdBy": "{{COMPANY_ID}}",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "title": "Data Analytics Dashboard",
+    "description": "Build a real-time analytics dashboard with data visualization, reporting tools, and KPI tracking for business intelligence.",
+    "deadline": "2024-04-15T00:00:00.000Z",
+    "budget": 28000,
+    "createdBy": "{{COMPANY_ID}}",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "title": "Customer Support Chat System",
+    "description": "Implement an AI-powered customer support chat system with ticket management, knowledge base, and multi-language support.",
+    "deadline": "2024-04-20T00:00:00.000Z",
+    "budget": 22000,
+    "createdBy": "{{COMPANY_ID}}",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "title": "Inventory Management Software",
+    "description": "Develop inventory management software with barcode scanning, stock alerts, supplier management, and reporting features.",
+    "deadline": "2024-04-25T00:00:00.000Z",
+    "budget": 32000,
+    "createdBy": "{{COMPANY_ID}}",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "title": "Financial Accounting System",
+    "description": "Custom accounting software with general ledger, accounts payable/receivable, financial reporting, and tax calculation modules.",
+    "deadline": "2024-05-01T00:00:00.000Z",
+    "budget": 38000,
+    "createdBy": "{{COMPANY_ID}}",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "title": "E-learning Platform Development",
+    "description": "Build an online learning platform with course management, video streaming, assessments, certificates, and progress tracking.",
+    "deadline": "2024-05-05T00:00:00.000Z",
+    "budget": 42000,
+    "createdBy": "{{COMPANY_ID}}",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "title": "Supply Chain Management System",
+    "description": "End-to-end supply chain management system with order tracking, warehouse management, logistics optimization, and supplier portal.",
+    "deadline": "2024-05-10T00:00:00.000Z",
+    "budget": 50000,
+    "createdBy": "{{COMPANY_ID}}",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "title": "Real Estate Management Platform",
+    "description": "Property management platform with listing management, virtual tours, tenant portal, maintenance tracking, and financial reporting.",
+    "deadline": "2024-05-15T00:00:00.000Z",
+    "budget": 35000,
+    "createdBy": "{{COMPANY_ID}}",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "title": "Healthcare Management System",
+    "description": "Hospital management system with patient records, appointment scheduling, billing, pharmacy management, and medical inventory.",
+    "deadline": "2024-05-20T00:00:00.000Z",
+    "budget": 55000,
+    "createdBy": "{{COMPANY_ID}}",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "title": "Restaurant POS System",
+    "description": "Point of sale system for restaurants with menu management, order tracking, payment processing, and inventory integration.",
+    "deadline": "2024-05-25T00:00:00.000Z",
+    "budget": 18000,
+    "createdBy": "{{COMPANY_ID}}",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "title": "Fleet Management Software",
+    "description": "Vehicle fleet management system with GPS tracking, maintenance scheduling, fuel monitoring, driver management, and route optimization.",
+    "deadline": "2024-06-01T00:00:00.000Z",
+    "budget": 33000,
+    "createdBy": "{{COMPANY_ID}}",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "title": "Event Management Platform",
+    "description": "Event planning and management platform with ticketing, registration, venue management, vendor coordination, and analytics.",
+    "deadline": "2024-06-05T00:00:00.000Z",
+    "budget": 27000,
+    "createdBy": "{{COMPANY_ID}}",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "title": "CRM System Development",
+    "description": "Customer relationship management system with lead tracking, sales pipeline, customer communication, and performance analytics.",
+    "deadline": "2024-06-10T00:00:00.000Z",
+    "budget": 31000,
+    "createdBy": "{{COMPANY_ID}}",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "title": "IoT Dashboard for Smart Buildings",
+    "description": "IoT monitoring dashboard for smart buildings with sensor data visualization, energy management, security monitoring, and predictive maintenance.",
+    "deadline": "2024-06-15T00:00:00.000Z",
+    "budget": 48000,
+    "createdBy": "{{COMPANY_ID}}",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "title": "Blockchain-based Supply Chain Tracking",
+    "description": "Implement blockchain technology for transparent supply chain tracking with smart contracts, product authentication, and audit trails.",
+    "deadline": "2024-06-20T00:00:00.000Z",
+    "budget": 65000,
+    "createdBy": "{{COMPANY_ID}}",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  }
+] 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './CompanyProfile.css';
-import API_BASE_URL from '../../config';
+import API_BASE_URL from '../../configFolder/api.js';
 import { Link } from 'react-router-dom';
 
 const CompanyProfile = () => {

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Register.css'; // Import the CSS
 import axios from "axios";
 import { Link } from 'react-router-dom';
-import API_BASE_URL from '../../config';
+import API_BASE_URL from '../../configFolder/api.js';
 
 const Register = () => {
 

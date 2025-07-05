@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Logout.css'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import API_BASE_URL from '../../config';
+import API_BASE_URL from '../../configFolder/api.js';
 
 
 const Logout = ({ children }) => {

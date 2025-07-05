@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './CreateCompany.css';
-import API_BASE_URL from '../../config';
+import API_BASE_URL from '../../configFolder/api.js';
 
 const CreateCompany = () => {
   const [formData, setFormData] = useState({

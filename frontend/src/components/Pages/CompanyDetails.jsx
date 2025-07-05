@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import './CompanyDetails.css';
-import API_BASE_URL from '../../config';
+import API_BASE_URL from '../../configFolder/api.js';
 
 const CompanyDetails = () => {
   const { id } = useParams();

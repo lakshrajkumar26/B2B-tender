@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./TenderList.css";
-import API_BASE_URL from '../../config';
+import API_BASE_URL from '../../configFolder/api.js';
 
 const TenderList = () => {
   const [tenders, setTenders] = useState([]);

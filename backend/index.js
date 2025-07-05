@@ -17,6 +17,7 @@ const allowedOrigins = [
   'http://localhost:3000',
   'https://b2b-tender-frontend.vercel.app', // Your Vercel frontend URL
   'https://b2b-tender.vercel.app', // Alternative Vercel URL
+  'https://your-actual-vercel-url.vercel.app', // Add your actual Vercel URL here
   process.env.FRONTEND_URL
 ].filter(Boolean);
 

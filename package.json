@@ -1,6 +1,14 @@
 {
-  "dependencies": {
-    "express-session": "^1.18.1",
-    "nodemailer": "^7.0.4"
+  "name": "b2b-tender-project",
+  "version": "1.0.0",
+  "description": "B2B Tender Management Platform",
+  "scripts": {
+    "start": "cd backend && npm start",
+    "install": "cd backend && npm install",
+    "build": "cd backend && npm install",
+    "dev": "cd backend && npm run dev"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }

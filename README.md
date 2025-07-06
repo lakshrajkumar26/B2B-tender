@@ -1,5 +1,8 @@
 🚀 B2B Tender Management Platform
-A simple full-stack web application that allows companies to manage their profiles, create and apply to tenders, and discover other businesses. Built as part of a 5-day internship task.
+A simple full-stack web application that allows companies to manage their profiles, create and apply to tenders, and discover other businesses.
+
+📌 Walk Through Demo (On Loom)
+- https://www.loom.com/share/93c211ed766c41af90f140caf27dc0db?sid=459d84a4-2352-463a-8881-25690d2a2b88
 
 📌 Key Features
 ✅ User signup, login, and logout (with session-based auth)

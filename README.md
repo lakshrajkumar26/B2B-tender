@@ -16,6 +16,7 @@ A simple full-stack web application that allows companies to manage their profil
 🔍 Search companies by name, industry, or services
 
 🛠️ Tech Stack
+
 Backend:
 
 Node.js, Express.js

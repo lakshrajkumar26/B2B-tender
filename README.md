@@ -5,7 +5,7 @@ A simple full-stack web application that allows companies to manage their profil
 - https://www.loom.com/share/93c211ed766c41af90f140caf27dc0db?sid=459d84a4-2352-463a-8881-25690d2a2b88
 
 📌 Key Features
-✅ User signup, login, and logout (with session-based auth)
+✅ User signup, login, and logout (with sessions-based auth)
 
 🏢 Company profile creation and editing (with logo/image upload)
 

@@ -1,4 +1,4 @@
-🚀 B2B Tender Management Platform
+🚀 B2B Tender Management Platform.
 A simple full-stack web application that allows companies to manage their profiles, create and apply to tenders, and discover other businesses.
 
 📌 Walk Through Demo (On Loom)
